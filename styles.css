@@ -1,23 +1,26 @@
-
 body {
-    font-family: Arial, sans-serif;
+    background-color: #0a0a0a;
+    color: #d4af37;
+    font-family: 'Garamond', serif;
     margin: 0;
     padding: 0;
-    background-color: #f5f5f5;
-    color: #333;
 }
 
 header {
-    background-color: #4a148c;
-    color: white;
-    padding: 15px;
+    background: linear-gradient(90deg, #111, #222);
+    padding: 20px;
     text-align: center;
+    box-shadow: 0 0 15px rgba(212, 175, 55, 0.7);
+}
+
+h1 {
+    font-size: 2.5em;
+    text-shadow: 2px 2px 10px rgba(212, 175, 55, 0.8);
 }
 
 nav ul {
     list-style-type: none;
     padding: 0;
-    text-align: center;
 }
 
 nav ul li {
@@ -26,28 +29,28 @@ nav ul li {
 }
 
 nav ul li a {
-    color: white;
+    color: #d4af37;
     text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #ffffff;
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.8);
 }
 
 section {
-    padding: 20px;
-    background-color: white;
+    padding: 30px;
+    background: rgba(20, 20, 20, 0.9);
     margin: 20px;
-    border-radius: 5px;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
-    max-width: 800px;
-    margin: 20px auto;
-}
-
-h2 {
-    color: #4a148c;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(212, 175, 55, 0.5);
 }
 
 footer {
     text-align: center;
-    padding: 10px;
-    background-color: #4a148c;
-    color: white;
-    margin-top: 20px;
+    padding: 20px;
+    background: #111;
+    box-shadow: 0 0 10px rgba(212, 175, 55, 0.5);
 }
