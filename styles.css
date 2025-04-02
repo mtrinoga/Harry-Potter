@@ -33,50 +33,41 @@ nav ul {
 nav ul li {
     display: inline-block;
     position: relative;
-    margin: 0 15px;
 }
 
-nav ul li a {
-    color: #5fd35f;
-    text-decoration: none;
-    font-weight: bold;
-    transition: color 0.3s;
-    padding: 10px;
-    display: block;
-}
-
-nav ul li a:hover {
-    color: #00ffff;
-    text-shadow: 0 0 10px rgba(0, 255, 255, 0.8);
+nav ul li .dropdown {
+    display: none;
+    position: absolute;
+    left: 0;
+    top: 100%;
+    background: #003b46;
+    box-shadow: 0 0 15px rgba(95, 211, 95, 0.5);
+    border-radius: 5px;
+    z-index: 1000;
+    min-width: 200px;
+    padding: 0;
 }
 
 nav ul li:hover .dropdown {
     display: block;
 }
 
-.dropdown {
-    display: none;
-    position: absolute;
-    background: #003b46;
-    box-shadow: 0 0 15px rgba(95, 211, 95, 0.5);
-    border-radius: 5px;
-    z-index: 1000;
-}
-
 .dropdown li {
     display: block;
-    padding: 10px;
+    padding: 0;
 }
 
 .dropdown li a {
     display: block;
     color: #5fd35f;
     padding: 10px 20px;
+    text-decoration: none;
 }
 
 .dropdown li a:hover {
     background: rgba(0, 255, 255, 0.3);
 }
+
 
 section {
     padding: 30px;
